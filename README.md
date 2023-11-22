@@ -18,3 +18,13 @@ A Dynamic Approach for Persona Development through Context-Aware, Time-Aware, an
 | ![First Image Description](documents/Deep_NN_arch.png) | ![Second Image Description](documents/Transformer_arch.png) |
 |:----------------------------------------------------------:|:-----------------------------------------------------------:|
 | Fig.2 - Deep NN architecture for benchmarking.             | Fig.3 - Transformer architecture for persona development.   |
+
+
+## Getting Started
+
+#### 1. Clone and Install
+
+```bash
+# Clone the repo
+
+git clone https://github.com/salehafzoon/ReactNative-Starter-Kit.git
