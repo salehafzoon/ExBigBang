@@ -41,8 +41,8 @@ We assess the feasibility of the proposed approach by utilizing a real-world dat
 | ML model multi-modal      | 0.76     | 0.76      | 0.79   | 0.78    |
 | Deep NN text-only         | 0.79     | 0.80      | 0.79   | 0.79    |
 | Deep NN multi-modal       | 0.80     | 0.80      | 0.82   | 0.81    |
-| Transformer text-only     | 0.90     | 0.78      | 0.88   | 0.83    |
-| Transformer multi-modal   | **0.91** | **0.80**  | **0.87** | **0.84** |
+| Transformer text-only     | 0.90     | 0.78      | **0.88** | 0.83    |
+| Transformer multi-modal   | **0.91** | **0.80**  | 0.87 | **0.84** |
 
 ## Getting Started
 
