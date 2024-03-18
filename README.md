@@ -30,14 +30,16 @@ In user-centred design and marketing, a persona represents a target customer's c
 
 ## Results
 
-| Models                    | Accuracy | Precision | Recall | F-score |
-|---------------------------|----------|-----------|--------|---------|
-| ML TF-IDF only            | 0.73     | 0.72      | 0.80   | 0.76    |
-| ML model multi-modal      | 0.76     | 0.76      | 0.79   | 0.78    |
-| Deep NN text-only         | 0.79     | 0.80      | 0.79   | 0.79    |
-| Deep NN multi-modal       | 0.80     | 0.80      | 0.82   | 0.81    |
-| Transformer text-only     | 0.90     | 0.78      | **0.88** | 0.83    |
-| Transformer multi-modal   | **0.91** | **0.80**  | 0.87 | **0.84** |
+|                    | Model                        | Accuracy | Precision | Recall | F-score |
+|--------------------|------------------------------|----------|-----------|--------|---------|
+| Tabular Only       | XGB                          | 0.67     | 0.66      | 0.79   | 0.71    |
+|                    | Tabular Dense NN             | 0.66     | 0.76      | 0.64   | 0.67    |
+| Textual Only       | XGB TF-IDF-only              | 0.74     | 0.73      | 0.79   | 0.76    |
+|                    | BiLSTM-Att NN                | 0.79     | 0.80      | 0.78   | 0.78    |
+| Text-Tabular       | XGB                          | 0.76     | 0.76      | 0.79   | 0.78    |
+|                    | BiLSTM-Att NN                | 0.80     | **0.80**  | 0.79   | 0.79    |
+|                    | Transformer                  | **0.91** | **0.80**  | **0.87** | **0.84** |
+
 
 ## Getting Started
 
