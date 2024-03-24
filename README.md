@@ -6,18 +6,13 @@
 
 ## Abstract
 
-In user-centred design and marketing, a persona represents a target customer's characteristics, needs, preferences, and behaviours.
-Constructing customer personas enables organizations to offer personalized services that align with their target audience's needs, and pain points, resulting in higher customer satisfaction.
-In this regard, earlier works investigated user profiling using machine learning and filtering techniques, along with studies focused on persona development by employing qualitative, quantitative, and automated approaches.
-The main research challenge in extracting relevant features from customer activities for persona development lies in the complexity of customer behaviour, contextual understanding, and potential data biases.
-To address this challenge, this paper presents a context-aware and time-aware pipeline to construct, enrich, and augment users' profiles through personas developed by transformers. We introduce a dynamic approach, namely BigBang, adaptive to customer behaviour changes, thus addressing the challenge of behavioural variability and the static nature of personas. Context awareness will focus on extracting more meaningful and relevant features by considering factors related to the user's previous interactions. Considering temporal aspects, we capture trends, seasonality, and behavioural changes, vital for accurate and up-to-date personas. Finally, by leveraging a multi-modal transformer, the approach enables deeper insight extraction from customer activities, helping to uncover latent features and behavioural nuances.
-We assess the feasibility of the proposed approach by utilizing a real-world dataset and examining cognitive features within the persona, emphasizing its efficacy for comprehensive behavioural analysis.
+In user-centred design and marketing, a persona represents a target customer's characteristics, needs, preferences, and behaviours. Constructing customer personas allows organizations to tailor services to meet target audience needs, boosting overall satisfaction. Previous studies explored user profiling through machine learning and filtering techniques and persona development research using qualitative, quantitative, and automated methods. The main challenge in extracting customer activity features for persona development is the complexity of behavioural, contextual comprehension, and potential data biases. To address this challenge, this paper presents a contextualized pipeline to construct, enrich, and augment users' profiles through personas developed by transformers. We introduce a dynamic approach, namely BigBang, that is adaptive to customer behaviour changes, thus addressing the challenge of behavioural variability and the static nature of personas. Contextualization will focus on extracting meaningful and relevant features by considering factors related to the user's previous interactions. Considering temporal aspects, we capture trends, seasonality, and behavioural changes, which are vital for accurate and up-to-date personas. Incorporating Explainable AI(XAI) into our Text-Tabular transformer, we achieve deeper insights into customer behaviour, unveiling latent features and nuances. We evaluate this method with accurate data, demonstrating its effectiveness in transparently analyzing cognitive characteristics for behavioural insights.
 
 
 ## Contributions
 
-- Providing a context-aware and time-aware profiling approach using a multi-modality-aware feature extraction technique.
-- Introducing a dynamic method for persona development, focusing on the interplay between sophisticated user profiling and multi-modal transformer technology.
+- Introducing a dynamic method for persona development, focusing on the interplay between sophisticated user profiling and hybrid transformer supporting both textual and tabular data.
+- Adopting XAI principles to bolster transparency and enrich the extraction of insightful patterns within persona development.
 
 
 ## Figures
@@ -35,14 +30,16 @@ We assess the feasibility of the proposed approach by utilizing a real-world dat
 
 ## Results
 
-| Models                    | Accuracy | Precision | Recall | F-score |
-|---------------------------|----------|-----------|--------|---------|
-| ML TF-IDF only            | 0.73     | 0.72      | 0.80   | 0.76    |
-| ML model multi-modal      | 0.76     | 0.76      | 0.79   | 0.78    |
-| Deep NN text-only         | 0.79     | 0.80      | 0.79   | 0.79    |
-| Deep NN multi-modal       | 0.80     | 0.80      | 0.82   | 0.81    |
-| Transformer text-only     | 0.90     | 0.78      | **0.88** | 0.83    |
-| Transformer multi-modal   | **0.91** | **0.80**  | 0.87 | **0.84** |
+|                    | Model                        | Accuracy | Precision | Recall | F-score |
+|--------------------|------------------------------|----------|-----------|--------|---------|
+| Tabular Only       | XGB                          | 0.67     | 0.66      | 0.79   | 0.71    |
+|                    | Tabular Dense NN             | 0.66     | 0.76      | 0.64   | 0.67    |
+| Textual Only       | XGB TF-IDF-only              | 0.74     | 0.73      | 0.79   | 0.76    |
+|                    | BiLSTM-Att NN                | 0.79     | 0.80      | 0.78   | 0.78    |
+| Text-Tabular       | XGB                          | 0.76     | 0.76      | 0.79   | 0.78    |
+|                    | BiLSTM-Att NN                | 0.80     | **0.80**  | 0.79   | 0.79    |
+|                    | Transformer                  | **0.91** | **0.80**  | **0.87** | **0.84** |
+
 
 ## Getting Started
 
