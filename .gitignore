@@ -1,2 +1,7 @@
 pre-processed data/
 sentiment140/
+utils/GoogleNews-vectors-negative300.bin
+utils/glove.6B.50d.txt
+utils/glove.6B.100d.txt
+utils/glove.6B.200d.txt
+utils/glove.6B.300d.txt
