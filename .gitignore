@@ -1,4 +1,10 @@
-pre-processed data/*.csv
+pre-processed data/cleaned_big_sentiment140_full_lex.csv
+pre-processed data/cln_aug_big_sentiment140_2.csv
+pre-processed data/cln_aug_big_sentiment140_full_lex.csv
+pre-processed data/cln_aug_big_sentiment140.csv
+
+
+
 sentiment140/
 utils/GoogleNews-vectors-negative300.bin
 utils/glove.6B.50d.txt
