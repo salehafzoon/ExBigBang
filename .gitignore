@@ -1,4 +1,4 @@
-pre-processed data/
+pre-processed data/*.csv
 sentiment140/
 utils/GoogleNews-vectors-negative300.bin
 utils/glove.6B.50d.txt
