@@ -1,19 +1,18 @@
-# BigBang
-### Title: A Dynamic Approach for Persona Development through Context-Aware, Time-Aware, and Multi-Modal Transformer Analysis
+# ExBigBang
+### Title: A Dynamic Approach for Explainable Persona Classification through Contextualized Hybrid Transformer Analysis
 
 ![Python](https://img.shields.io/badge/Python-Compatible-green.svg)
 [![Colab](https://img.shields.io/badge/Google%20Colab-Open-orange.svg)]()
 
 ## Abstract
-
-In user-centred design and marketing, a persona represents a target customer's characteristics, needs, preferences, and behaviours. Constructing customer personas allows organizations to tailor services to meet target audience needs, boosting overall satisfaction. Previous studies explored user profiling through machine learning and filtering techniques and persona development research using qualitative, quantitative, and automated methods. The main challenge in extracting customer activity features for persona development is the complexity of behavioural, contextual comprehension, and potential data biases. To address this challenge, this paper presents a contextualized pipeline to construct, enrich, and augment users' profiles through personas developed by transformers. We introduce a dynamic approach, namely BigBang, that is adaptive to customer behaviour changes, thus addressing the challenge of behavioural variability and the static nature of personas. Contextualization will focus on extracting meaningful and relevant features by considering factors related to the user's previous interactions. Considering temporal aspects, we capture trends, seasonality, and behavioural changes, which are vital for accurate and up-to-date personas. Incorporating Explainable AI(XAI) into our Text-Tabular transformer, we achieve deeper insights into customer behaviour, unveiling latent features and nuances. We evaluate this method with accurate data, demonstrating its effectiveness in transparently analyzing cognitive characteristics for behavioural insights.
+In user-centric design, persona development is crucial for understanding user behaviour, capturing needs, identifying key audience segments, and supporting decision-making. However, the complexity of today's user interactions reinforces the need for a contextualized approach to align designs closely with actual user needs. Previous studies have enhanced persona classification's ability to understand user behaviours; yet, its struggle to capture contextual information by combining textual and tabular data remains a significant challenge. Additionally, these models struggle with explainability, making their interpretability and the justification of their predictions largely unexplored. To address this, in this study, we present ExBigBang (Explainable BigBand), a hybrid (text-tabular) approach that leverages transformers to effectively model contextual features for persona classification. Specifically, ExBigBang integrates a text-tabular transformer model to incorporate contextual information from metadata, domain knowledge and user profiling. Through a cyclical process of user profiling and persona classification, it dynamically ensures a continuously updated reflection of user behaviours. Our experiments validate our model's robustness on a benchmark persona classification dataset. The ablation study highlights the impact of integrating textual and tabular data through our transformer-based model, while our application of Explainable AI (XAI) techniques elucidates the reasons behind its predictions in persona classification.
 
 
 ## Contributions
 
-- Introducing a dynamic method for persona development, focusing on the interplay between sophisticated user profiling and hybrid transformer supporting both textual and tabular data.
-- Adopting XAI principles to bolster transparency and enrich the extraction of insightful patterns within persona development.
-
+- Presenting a hybrid contextualization approach for persona development, utilizing a text-tabular transformer classifier.
+- Introducing a dynamic framework that focuses on the interplay between user profiling and persona classification, producing a cyclical enhancement process for continuous refinement and relevance.
+- Adopting XAI principles to enhance transparency by elucidating impactful factors within persona classification.
 
 ## Figures
 
@@ -26,20 +25,6 @@ In user-centred design and marketing, a persona represents a target customer's c
 | ![First Image Description](documents/Deep_NN_arch.png) | ![Second Image Description](documents/Transformer_arch.png) |
 |:----------------------------------------------------------:|:-----------------------------------------------------------:|
 | Fig.2 - Deep NN architecture for benchmarking.             | Fig.3 - Transformer architecture for persona development.   |
-
-
-## Results
-
-|                    | Model                        | Accuracy | Precision | Recall | F-score |
-|--------------------|------------------------------|----------|-----------|--------|---------|
-| Tabular Only       | XGB                          | 0.67     | 0.66      | 0.79   | 0.71    |
-|                    | Tabular Dense NN             | 0.66     | 0.76      | 0.64   | 0.67    |
-| Textual Only       | XGB TF-IDF-only              | 0.74     | 0.73      | 0.79   | 0.76    |
-|                    | BiLSTM-Att NN                | 0.79     | 0.80      | 0.78   | 0.78    |
-| Text-Tabular       | XGB                          | 0.76     | 0.76      | 0.79   | 0.78    |
-|                    | BiLSTM-Att NN                | 0.80     | **0.80**  | 0.79   | 0.79    |
-|                    | Transformer                  | **0.91** | **0.80**  | **0.87** | **0.84** |
-
 
 ## Getting Started
 
