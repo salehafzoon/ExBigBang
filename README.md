@@ -33,4 +33,5 @@ In user-centric design, persona development is crucial for understanding user be
 ```bash
 # Clone the repo
 
-git clone https://github.com/salehafzoon/BigBang.git
+git clone https://github.com/salehafzoon/ExBigBang.git
+
